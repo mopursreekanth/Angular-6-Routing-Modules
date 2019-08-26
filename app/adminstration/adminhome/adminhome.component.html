@@ -1,0 +1,30 @@
+
+
+
+<div style="text-align:center">
+    <p>adminhome works!</p>
+<!-- <a [routerLink]="['organization']" [routerLinkActive]="['active']">Organization</a>||
+<a [routerLink]="['units']" [routerLinkActive]="['active']">Units</a>||
+<a [routerLink]="['configration']" [routerLinkActive]="['active']">Configaration</a>||
+<a [routerLink]="['templates']" [routerLinkActive]="['active']">Templates</a>|| -->
+
+
+
+
+<!-- <ul>
+    <li> <a [routerLink]="['organization']" [routerLinkActive]="['active']">Organization</a></li>
+    <li> <a [routerLink]="['units']" [routerLinkActive]="['active']">Units</a></li>
+    <li><a [routerLink]="['configration']" [routerLinkActive]="['active']">Configaration</a></li>
+    <li><a [routerLink]="['templates']" [routerLinkActive]="['active']">Templates</a></li>
+  
+</ul> -->
+</div>
+<div class="btn-group">
+        <button type="button" class="btn btn-outline-dark" [routerLink]="['organization']" [routerLinkActive]="['active']" >Organization</button>
+        <button type="button" class="btn btn-outline-dark" [routerLink]="['units']" [routerLinkActive]="['active']">Units</button>
+        <button type="button" class="btn btn-outline-dark" [routerLink]="['configration']" [routerLinkActive]="['active']" >Configaration</button>
+        <button type="button" class="btn btn-outline-dark" [routerLink]="['templates']" [routerLinkActive]="['active']" >Templates</button>
+      </div>
+  
+
+  <router-outlet></router-outlet>
