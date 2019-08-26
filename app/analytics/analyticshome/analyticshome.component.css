@@ -1,0 +1,31 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(185, 31, 26);
+    display: table-cell;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    display: table-cell;
+  }
+  
+  li a:hover {
+    background-color: rgba(223, 150, 15, 0.966);
+    display: table-cell;
+  }
+
+  .active {
+    border-bottom:4px rgb(68, 128, 0) solid;
+    background-color: rgba(155, 207, 11, 0.849);
+    }
