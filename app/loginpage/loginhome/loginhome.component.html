@@ -1,0 +1,66 @@
+<p>loginhome works!</p>
+
+
+<div class="btn-group">
+
+
+
+
+    <button type="button" class="btn btn-outline-dark" [routerLink]="['login']" [routerLinkActive]="['active']">login</button>
+    <button type="button" class="btn btn-outline-dark" [routerLink]="['register']" [routerLinkActive]="['active']">register</button>
+    <button type="button" class="btn btn-outline-dark" [routerLink]="['forgotpassword']" [routerLinkActive]="['active']">forgotpassword</button>
+
+
+
+
+
+
+
+</div>
+
+<!-- <div class="container-fluid col-md-6 shadow">
+    <div class="form-group col-md-6 ">
+        <h2> Login</h2>
+        <label for="userName">Username: </label>
+        <input type="text" name="userName" class="form-control">
+    </div>
+
+    <div class="form-group col-md-6">
+        <label for="password">Password: </label>
+        <input type="text" name="password" class="form-control">
+    </div>
+
+    <div class="">
+       
+        <button class="btn btn-primary"> Login </button>
+        <button  [routerLink]="['register']"  class=" btn btn-warning"> Register </button>
+
+    </div>
+
+</div> -->
+
+
+
+<form>
+    
+   <div class="container-fluid col-md-6">
+        <h2>Login</h2>
+
+        <div class="form-group  col-md-6">
+                <label for="username">Username</label>
+                <input type="text" formControlName="username" class="form-control"/>
+               
+            </div>
+            <div class="form-group col-md-6">
+                <label for="password">Password</label>
+                <input type="password" formControlName="password" class="form-control"  />
+                
+            </div>
+            
+            <div class="form-group">
+                <button [disabled]="loading" class="btn btn-primary">Login</button>
+                
+                <a [routerLink]="['register']" class="btn btn-link">Register</a>
+            </div>
+   </div>
+</form>
