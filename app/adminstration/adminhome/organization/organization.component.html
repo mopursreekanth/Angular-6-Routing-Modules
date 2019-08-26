@@ -1,0 +1,81 @@
+<p>organization works!</p>
+
+
+<div class="from-control">
+    <h5> organization</h5>
+
+<div>
+
+        <div class="col-md-12">
+             
+                  <button  type="button"
+                    class="btn btn-danger" aria-hidden="true" placement="bottom"
+                    ngbTooltip="Delete" >
+                    <div class="anim"></div> <span class="fa fa-trash"></span>
+                  </button>
+                  <button  type="button"
+                    class="btn btn-success" aria-hidden="true" placement="bottom"
+                    ngbTooltip="Edit"  >
+                    <div class="anim"></div> <span class="fa fa-pencil"></span>
+                  </button>
+                  <button  type="button"
+                    class=" btn btn-primary" aria-hidden="true" placement="bottom"
+                    ngbTooltip="Create" >
+                    <div class="anim"></div> <span class="fa fa-plus-square"></span>
+                  </button>
+                  <button type="button" class=" btn btn-warning" aria-hidden="true"
+                    placement="bottom" ngbTooltip="Deselect ">
+                    <div class="anim"></div> <span class="fa fa-undo"></span>
+                  </button>
+
+              
+                </div>
+              
+</div>
+    
+
+<div class="container-fluid">
+
+        
+
+    <ag-grid-angular 
+    style="width: 500px; height: 200px;" 
+    class="ag-theme-balham"
+    [rowData]="rowData" 
+    [columnDefs]="columnDefs"
+    >
+</ag-grid-angular>
+
+</div>
+
+
+
+
+    <!-- <div class="col-md-12">
+        <div class="container">
+            <form>
+
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" required name="name">
+                    <div [hidden]="name.valid || name.pristine" class="alert alert-danger"> Name is required </div>
+                </div>
+
+                <div class="from-control form-group">
+                    <label> Enter organization name:</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="from-control">
+                    <label> Enter Unit name:</label>
+                    <input type="text" class="form-control">
+                </div>
+
+                <div class="from-control">
+                    <button type="button" class="btn btn-danger form-group">Cancel</button>
+                    <button type="reset" class="btn btn-success form-group">Save</button>
+                </div>
+
+            </form>
+        </div>
+    </div> -->
+</div>
